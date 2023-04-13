@@ -83,8 +83,7 @@ public class Gui {
         sort.setBackground(Color.decode(buttonColor));
         sort.addActionListener((e) -> {
             field.setText("");
-            if ((int)(Math.random() * 2 + 1) == 1) Main.selectionSort();
-            else Main.insertionSort();
+            Main.selectionSort();
         });
 
         save = new JButton("Save");
